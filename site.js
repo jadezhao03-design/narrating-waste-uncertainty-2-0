@@ -1,0 +1,1 @@
+const scenes=document.querySelectorAll('.voice-scene'); if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>entry.target.classList.toggle('scene-visible',entry.isIntersecting)),{threshold:.16}); scenes.forEach(scene=>observer.observe(scene));}else{scenes.forEach(scene=>scene.classList.add('scene-visible'));}
